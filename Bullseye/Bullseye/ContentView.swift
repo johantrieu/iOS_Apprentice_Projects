@@ -20,6 +20,8 @@ struct ContentView: View {
         Int(self.sliderValue.rounded())
         
     }
+    @State var score = 0
+    @State var round = 1
     
     // User interface content and layout
     
@@ -49,7 +51,7 @@ struct ContentView: View {
             // Button row
             
             Button(action: {
-                print("Points awarded: \(self.pointsForCurrentRound())")
+                print("Button pressed!")
                 self.alertIsVisible = true
             }) {
                 Text("Hit me!")
@@ -57,7 +59,11 @@ struct ContentView: View {
             .alert(isPresented: self.$alertIsVisible) {
                 Alert(title: Text("Hello there!"),
                   message: Text(self.scoringMessage()),
-                  dismissButton: .default(Text("Awesome!")))
+                  dismissButton: .default(Text("Awesome!")){
+                    self.score = self.score + self.pointsForCurrentRound()
+                    self.target = Int.random(in: 1...100)
+                    self.round = self.round + 1
+                    })
             }
             Spacer()
             // Score row
@@ -67,10 +73,10 @@ struct ContentView: View {
               }
                 Spacer()
                 Text("Score:")
-                Text("999999")
+                Text("\(self.score)")
                 Spacer()
                 Text("Round:")
-                Text("999")
+                Text("\(self.round)")
                 Spacer()
                 Button(action: {}) {
                 Text("Info")
@@ -83,15 +89,9 @@ struct ContentView: View {
     
     // Methods
     func pointsForCurrentRound() -> Int {
-        let difference: Int
-        if self.sliderValueRounded > self.target {
-        difference = self.sliderValueRounded - self.target }
-        else if self.target > self.sliderValueRounded {
-        difference = self.target - self.sliderValueRounded }
-        else {
-            difference = 0
-          }
-        return 100 - difference
+        let maximumScore = 100
+        let difference = abs(self.sliderValueRounded - self.target)
+        return maximumScore - difference
     }
     func scoringMessage() -> String {
     return "The slider's value is \(self.sliderValueRounded).\n" +
