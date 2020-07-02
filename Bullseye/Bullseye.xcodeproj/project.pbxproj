@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA31F3FC24ADF300009B2643 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA31F3FB24ADF300009B2643 /* AboutView.swift */; };
 		BAB53BEE24AACF4F00391625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB53BED24AACF4F00391625 /* AppDelegate.swift */; };
 		BAB53BF024AACF4F00391625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB53BEF24AACF4F00391625 /* SceneDelegate.swift */; };
 		BAB53BF224AACF4F00391625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB53BF124AACF4F00391625 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA31F3FB24ADF300009B2643 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		BAB53BEA24AACF4F00391625 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB53BED24AACF4F00391625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAB53BEF24AACF4F00391625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				BAB53BED24AACF4F00391625 /* AppDelegate.swift */,
 				BAB53BEF24AACF4F00391625 /* SceneDelegate.swift */,
 				BAB53BF124AACF4F00391625 /* ContentView.swift */,
+				BA31F3FB24ADF300009B2643 /* AboutView.swift */,
 				BAB53BF324AACF5000391625 /* Assets.xcassets */,
 				BAB53BF824AACF5000391625 /* LaunchScreen.storyboard */,
 				BAB53BFB24AACF5000391625 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA31F3FC24ADF300009B2643 /* AboutView.swift in Sources */,
 				BAB53BEE24AACF4F00391625 /* AppDelegate.swift in Sources */,
 				BAB53BF024AACF4F00391625 /* SceneDelegate.swift in Sources */,
 				BAB53BF224AACF4F00391625 /* ContentView.swift in Sources */,
