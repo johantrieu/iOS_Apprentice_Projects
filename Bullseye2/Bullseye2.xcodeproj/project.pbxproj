@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1E2D7C24C493B200CBBA26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E2D7B24C493B200CBBA26 /* AboutViewController.swift */; };
+		BA1E2D7E24C4B81800CBBA26 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = BA1E2D7D24C4B81800CBBA26 /* Bullseye.html */; };
+		BA1E2D8124C4B89200CBBA26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1E2D8024C4B89200CBBA26 /* WebKit.framework */; };
 		BA54C2A124BD9A750073C04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A024BD9A750073C04A /* AppDelegate.swift */; };
 		BA54C2A324BD9A750073C04A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A224BD9A750073C04A /* SceneDelegate.swift */; };
 		BA54C2A524BD9A750073C04A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A424BD9A750073C04A /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1E2D7B24C493B200CBBA26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BA1E2D7D24C4B81800CBBA26 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../../iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
+		BA1E2D8024C4B89200CBBA26 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		BA54C29D24BD9A750073C04A /* Bullseye2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA54C2A024BD9A750073C04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA54C2A224BD9A750073C04A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E2D8124C4B89200CBBA26 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1E2D7F24C4B89200CBBA26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA1E2D8024C4B89200CBBA26 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA54C29424BD9A740073C04A = {
 			isa = PBXGroup;
 			children = (
 				BA54C29F24BD9A750073C04A /* Bullseye2 */,
 				BA54C29E24BD9A750073C04A /* Products */,
+				BA1E2D7F24C4B89200CBBA26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +72,7 @@
 		BA54C29F24BD9A750073C04A /* Bullseye2 */ = {
 			isa = PBXGroup;
 			children = (
+				BA1E2D7D24C4B81800CBBA26 /* Bullseye.html */,
 				BA54C2A024BD9A750073C04A /* AppDelegate.swift */,
 				BA54C2A224BD9A750073C04A /* SceneDelegate.swift */,
 				BA54C2A424BD9A750073C04A /* ViewController.swift */,
@@ -63,6 +80,7 @@
 				BA54C2A924BD9A760073C04A /* Assets.xcassets */,
 				BA54C2AB24BD9A760073C04A /* LaunchScreen.storyboard */,
 				BA54C2AE24BD9A760073C04A /* Info.plist */,
+				BA1E2D7B24C493B200CBBA26 /* AboutViewController.swift */,
 			);
 			path = Bullseye2;
 			sourceTree = "<group>";
@@ -126,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA54C2AD24BD9A760073C04A /* LaunchScreen.storyboard in Resources */,
+				BA1E2D7E24C4B81800CBBA26 /* Bullseye.html in Resources */,
 				BA54C2AA24BD9A760073C04A /* Assets.xcassets in Resources */,
 				BA54C2A824BD9A750073C04A /* Main.storyboard in Resources */,
 			);
@@ -140,6 +159,7 @@
 			files = (
 				BA54C2A524BD9A750073C04A /* ViewController.swift in Sources */,
 				BA54C2A124BD9A750073C04A /* AppDelegate.swift in Sources */,
+				BA1E2D7C24C493B200CBBA26 /* AboutViewController.swift in Sources */,
 				BA54C2A324BD9A750073C04A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
