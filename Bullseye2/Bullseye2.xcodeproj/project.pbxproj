@@ -10,6 +10,7 @@
 		BA1E2D7C24C493B200CBBA26 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E2D7B24C493B200CBBA26 /* AboutViewController.swift */; };
 		BA1E2D7E24C4B81800CBBA26 /* Bullseye.html in Resources */ = {isa = PBXBuildFile; fileRef = BA1E2D7D24C4B81800CBBA26 /* Bullseye.html */; };
 		BA1E2D8124C4B89200CBBA26 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1E2D8024C4B89200CBBA26 /* WebKit.framework */; };
+		BA1E2D8324C4BD2900CBBA26 /* HighScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E2D8224C4BD2900CBBA26 /* HighScoresViewController.swift */; };
 		BA54C2A124BD9A750073C04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A024BD9A750073C04A /* AppDelegate.swift */; };
 		BA54C2A324BD9A750073C04A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A224BD9A750073C04A /* SceneDelegate.swift */; };
 		BA54C2A524BD9A750073C04A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54C2A424BD9A750073C04A /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		BA1E2D7B24C493B200CBBA26 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		BA1E2D7D24C4B81800CBBA26 /* Bullseye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Bullseye.html; path = "../../../iOS_Apprentice_souce_code_v8.2.1/19-getting-started-uikit/Resources/Bullseye.html"; sourceTree = "<group>"; };
 		BA1E2D8024C4B89200CBBA26 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BA1E2D8224C4BD2900CBBA26 /* HighScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoresViewController.swift; sourceTree = "<group>"; };
 		BA54C29D24BD9A750073C04A /* Bullseye2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA54C2A024BD9A750073C04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA54C2A224BD9A750073C04A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				BA54C2A224BD9A750073C04A /* SceneDelegate.swift */,
 				BA54C2A424BD9A750073C04A /* ViewController.swift */,
 				BA54C2A624BD9A750073C04A /* Main.storyboard */,
+				BA1E2D8224C4BD2900CBBA26 /* HighScoresViewController.swift */,
 				BA54C2A924BD9A760073C04A /* Assets.xcassets */,
 				BA54C2AB24BD9A760073C04A /* LaunchScreen.storyboard */,
 				BA54C2AE24BD9A760073C04A /* Info.plist */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1E2D8324C4BD2900CBBA26 /* HighScoresViewController.swift in Sources */,
 				BA54C2A524BD9A750073C04A /* ViewController.swift in Sources */,
 				BA54C2A124BD9A750073C04A /* AppDelegate.swift in Sources */,
 				BA1E2D7C24C493B200CBBA26 /* AboutViewController.swift in Sources */,

@@ -118,6 +118,14 @@
                                     <segue destination="cnI-x2-cLR" kind="presentation" modalTransitionStyle="flipHorizontal" id="Uco-aa-u06"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mux-um-LIv">
+                                <rect key="frame" x="605" y="256" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="🏆" backgroundImage="SmallButton"/>
+                                <connections>
+                                    <segue destination="Mfn-5f-HlF" kind="show" id="4LI-zn-Jv7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -177,6 +185,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHd-eD-gKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-0.44977511244377816" y="685.60000000000002"/>
+        </scene>
+        <!--High Scores View Controller-->
+        <scene sceneID="te8-kJ-nBb">
+            <objects>
+                <tableViewController id="Mfn-5f-HlF" customClass="HighScoresViewController" customModule="Bullseye2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lyu-Nu-g6e">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HighScoreItem" id="FBF-ua-VaX">
+                                <rect key="frame" x="0.0" y="28" width="667" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FBF-ua-VaX" id="Sep-Hp-yhr">
+                                    <rect key="frame" x="0.0" y="0.0" width="667" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LyF-ln-DtW">
+                                            <rect key="frame" x="36" y="11" width="284" height="21.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="284" id="o0m-GL-tSA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlJ-Gc-Anx">
+                                            <rect key="frame" x="363" y="11" width="42" height="21.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="LyF-ln-DtW" firstAttribute="firstBaseline" secondItem="dlJ-Gc-Anx" secondAttribute="firstBaseline" id="8ve-HE-cCh"/>
+                                        <constraint firstItem="LyF-ln-DtW" firstAttribute="centerY" secondItem="Sep-Hp-yhr" secondAttribute="centerY" id="90w-2w-8TA"/>
+                                        <constraint firstItem="LyF-ln-DtW" firstAttribute="top" secondItem="Sep-Hp-yhr" secondAttribute="topMargin" id="eAI-3M-gez"/>
+                                        <constraint firstAttribute="trailing" secondItem="dlJ-Gc-Anx" secondAttribute="trailing" constant="262" id="enz-Ir-Rm9"/>
+                                        <constraint firstItem="LyF-ln-DtW" firstAttribute="leading" secondItem="Sep-Hp-yhr" secondAttribute="leadingMargin" constant="16" id="fZi-6c-kkw"/>
+                                        <constraint firstItem="dlJ-Gc-Anx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="LyF-ln-DtW" secondAttribute="trailing" constant="8" symbolic="YES" id="kKA-Sd-9Lu"/>
+                                        <constraint firstItem="LyF-ln-DtW" firstAttribute="baseline" secondItem="dlJ-Gc-Anx" secondAttribute="baseline" id="nNk-Nl-fbu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mfn-5f-HlF" id="G9a-ol-rIV"/>
+                            <outlet property="delegate" destination="Mfn-5f-HlF" id="mZT-5m-dV4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Upq-lH-EiW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmz-1L-TI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1.3493253373313345" y="1372"/>
         </scene>
     </scenes>
     <resources>
