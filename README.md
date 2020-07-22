@@ -1,1 +1,1 @@
-# iOS_Apprentice_Projects 8th edition
+# iOS apps from iOS Apprentice book (8th edition)
